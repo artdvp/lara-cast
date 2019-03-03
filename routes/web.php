@@ -12,7 +12,29 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $tasks = [
+        "Go to the store",
+        "Go to the market",
+        "Go to work",
+        "Go to concert"
+    ];
+
+
+    // return view('welcome', [
+    //     'tasks' => $tasks,
+    //     'foo' => 'foobar',
+    //     'bar' => request('title'),
+    //     'scp' => '<u>HTML Tag</u>'
+    // ]);
+    
+    // return view('welcome')->withTasks($tasks)->withFoo('foobar')->withBar(request('title'))->withScp('<u>HTML Tag</u>');
+
+    return view('welcome')->with([
+        'tasks' => ['Go to store'],
+        'foo' => 'foobar',
+        'bar' => request('title'),
+        'scp' => '<u>HTML Tag</u>'
+    ]);
 });
 
 Route::get('/about' , function () {
