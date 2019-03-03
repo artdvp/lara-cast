@@ -1,19 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>contact</title>
-</head>
-<body>
-    <h1>Contact form</h1>
+@extends('layout')
+
+
+@section('title', 'Contact Us')
+
+@section('content')
+<h1>Contact form</h1>
     <p>
-        <a href="/contact">Contact</a> us to learn
-
-
-        <br>
-        <a href="/">Home</a>
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia odit ab, dolores quae eos beatae fugiat sit modi. Quod,
+        delectus numquam sit iure temporibus odio officiis tempore est itaque ad.
     </p>
-</body>
-</html>
+@endsection
